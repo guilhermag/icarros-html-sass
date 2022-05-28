@@ -1,0 +1,171 @@
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282a36;
+  color: #bd93f9;
+  font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  height: 100px;
+}
+
+.header-container {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-content a {
+  text-decoration: none;
+  color: #bd93f9;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 12px;
+  transition: 0.5s;
+}
+
+.nav-content a:hover {
+  color:#ff79c6
+}
+
+.nav-content {
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.article-content {
+  display: flex;
+}
+
+.section{
+  height: 100vh;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.p50 {
+  padding: 50px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.img-article {
+  width: 50%;
+  height: auto;
+}
+
+.page-title {
+  font-size: 40px;
+}
+
+.page-content {
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: #6272a4;
+  border: #282a36 solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+input {
+  background-color: #44475a;
+  border-radius: 5px;
+  text-align: center;
+  height: 1.5rem;
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+input::placeholder {
+  color: #f8f8f2;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #ffb86c;
+}
+
+textarea {
+  background-color: #282a36;
+  color: #ff79c6;
+}
+
+input[type=text] {
+  color:#ff79c6;
+}
+
+button {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 8rem;
+  border-radius: 10px;
+  background-color: #44475a;
+  color:#ffb86c;
+  transition: 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffb86c;
+  color: #44475a;
+}
+
+.loader-active {
+  z-index: 5;
+  background-color: #bd93f9;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
