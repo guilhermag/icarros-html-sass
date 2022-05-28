@@ -35,22 +35,26 @@
       </div>
     </section>
 
-    <div>
+    <div class="container">
       <section class="form-section">
-        <form id="contact_form">
+        <form id="contact_form" class="d-flex form">
           <label for="nome">Nome</label>
           <input type="text" id="name" name="name">
           <label for="email">E-mail</label>
           <input type="text" id="email" name="email">
           <label for="phone">Telefone</label>
           <input type="text" id="phone" name="phone">
-          <label for="story">Como foi seu dia hoje ?</label>
-          <textarea name="story" id="story" cols="33" rows="5">
+          <label for="story">Conte uma história</label>
+          <textarea name="story" id="story" cols="30" rows="5">
             Hoje fui ao mercado...
           </textarea>
           <button type="submit">Submit</button>
         </form>
-        <div id="loader" class="loader-active"></div> 
+        <div id="loader" class="loader-inative">
+          <div class="loader_content">
+            <img src="img/loader.svg" alt="loader">
+          </div>
+        </div> 
       </section>
     </div>
 

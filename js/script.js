@@ -1,12 +1,18 @@
 let contactForm = document.querySelector('#contact_form');
 
 contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
   let name = document.querySelector('#name').value,
     email = document.querySelector('#email').value,
     phone = document.querySelector('#phone').value,
     message = document.querySelector('#story').value;
 
-  axios.post('https://webhook.site/94e6b897-a892-4f26-97a7-378a5dc535e8',
+  let loaderContent = document.querySelector('#loader');
+  loaderContent.classList.remove('loader-inative');
+  loaderContent.classList.add('loader-active');
+
+  axios.post('https://webhook.site/416933d6-6aad-4e27-84e4-b5e568b98613',
   {
     name,
     email,
@@ -14,7 +20,10 @@ contactForm.addEventListener('submit', (event) => {
     message
   }
   ).finally(
-    () => alert('Enviado com sucesso')
+    () => {
+      loaderContent.classList.remove('loader-active');
+      loaderContent.classList.add('loader-inative');
+    }
   )
 
 
