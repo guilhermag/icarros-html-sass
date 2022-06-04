@@ -24,7 +24,7 @@ Nessa aula foram explicados os conceitos de Sass, além de como consumir dados d
 
 ### Acessar o site do Projeto
 
-O projeto está hospedado no Netilify, podendo ser acessado por esse [link]().
+O projeto está hospedado no Netilify, podendo ser acessado por esse [link](https://icarros-gama-exc03-html-sass-guilherme-gabriel.netlify.app/).
 
 ## Créditos
 
